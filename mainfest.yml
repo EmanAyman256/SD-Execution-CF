@@ -1,5 +1,5 @@
 applications:
-  - name: execution-app
+  - name: Execution-app-dev
     buildpack: staticfile_buildpack
     memory: 1000MB
     instances: 1
