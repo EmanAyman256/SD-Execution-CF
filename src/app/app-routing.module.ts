@@ -10,11 +10,17 @@ import { CloudDataComponent } from './cloud-data/cloud-data.component';
 
 const routes: Routes = [
  { path: '', component: HomePageComponent },
-  // { path: '', redirectTo: '/home', pathMatch: 'full' }, 
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, 
   { path: 'home', component: HomePageComponent },
   { path: 'login', component: AuthComponent },
   { path: 'execution-order',canActivate:[AuthGuard], component: ExecutionOrderComponent },
   { path: 'execution-order-data',canActivate:[AuthGuard], component: CloudDataComponent },
+  //!Without Security :
+  //  { path: '', component: CloudDataComponent },
+
+  // { path: 'execution-order', component: ExecutionOrderComponent },
+  // { path: 'execution-order-data', component: CloudDataComponent },
+
 ];
 
 @NgModule({
