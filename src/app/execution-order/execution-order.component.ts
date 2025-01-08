@@ -147,7 +147,7 @@ export class ExecutionOrderComponent {
 
   showSalesQuotationDialog() {
     this.displayTenderingDocumentDialog = true;
-    this._ApiService.get<MainItemSalesQuotation[]>(`mainitems?salesOrder=${this.documentNumber}&salesOrderItem=10`).subscribe({
+    this._ApiService.get<MainItemSalesQuotation[]>(`mainitems?salesOrder=${this.documentNumber}`).subscribe({
       // next: (res) => {
       //   this.salesQuotations = res.sort((a, b) => a.invoiceMainItemCode - b.invoiceMainItemCode);
       //   console.log(this.mainItemsRecords);
